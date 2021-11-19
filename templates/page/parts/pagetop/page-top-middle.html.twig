@@ -1,0 +1,37 @@
+<style>
+.page-top-middle .container{
+    background-color: #fff;
+    padding: 10px;
+}
+</style>
+{% if page.pagetopmiddle_first or page.pagetopmiddle_second or page.pagetopmiddle_third or page.pagetopmiddle_fourth %}
+<div class="page-top-middle">
+<div class="container">
+   <div class="row">
+      {% if page.pagetopmiddle_first %}
+        <div class="pagetopmiddle-first col-lg-{{ pagetopmiddle_first_size }} col-md-{{ pagetopmiddle_first_size }} col-sm-12 col-xs-12 column">
+          {{ page.pagetopmiddle_first }}
+        </div>
+      {% endif %}
+
+      {% if page.pagetopmiddle_second %}
+       <div class="pagetopmiddle-second col-lg-{{ pagetopmiddle_second_size }} col-md-{{ pagetopmiddle_second_size }} col-sm-12 col-xs-12 column">
+          {{ page.pagetopmiddle_second }}
+        </div>
+      {% endif %}
+
+      {% if page.pagetopmiddle_third %}
+        <div class="pagetopmiddle-third col-lg-{{ pagetopmiddle_third_size }} col-md-{{ pagetopmiddle_third_size }} col-sm-12 col-xs-12 column">
+          {{ page.pagetopmiddle_third }}
+        </div>
+      {% endif %}
+
+      {% if page.pagetopmiddle_fourth %}
+         <div class="pagetopmiddle-four col-lg-{{ pagetopmiddle_four_size }} col-md-{{ pagetopmiddle_four_size }} col-sm-12 col-xs-12 column">
+          {{ page.pagetopmiddle_fourth }}
+        </div>
+      {% endif %}
+   </div>
+</div>
+</div>
+{% endif %}

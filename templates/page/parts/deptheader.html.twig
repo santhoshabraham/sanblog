@@ -1,0 +1,60 @@
+<div class="container no-padding">
+<div class ="dept-header">
+  <div class="row">
+    <div class="col-md-6">
+ {# Branding #}
+ {% if page.sitetitle%}
+
+   <div class="site-title">
+     <h1 class="college-name">
+       <a href="{{ college_url }}">{{ college_name }}
+       </a>
+      </h1>
+    <h3 class="site-name">{{ page.sitetitle }}</h3>
+   </div>
+
+ {% endif %}
+    </div>
+    <div class="col-md-6">
+    <div class="search">
+    {% if page.searchblock%}
+    {% block searchblock %}
+    {{ page.searchblock }}
+    {% endblock %}
+    {% endif %}
+  </div>
+<div class="social-media-top">
+<div class="ex4">
+{% if instagram %}
+<a href="{{ instagram }}"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if facebook %}
+<a href="{{ facebook }}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if twitter %}
+<a href="{{ twitter }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if linkedin %}
+<a href="{{ linkedin }}"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if youtube %}
+<a href="{{ youtube }}"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if pinterest %}
+<a href="{{ pinterest }}"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if skype %}
+<a href="{{ skype }}"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if vimeo %}
+<a href="{{ vimeo }}"><i class="fa fa-vimeo fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+{% if github %}
+<a href="{{ github }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+{% endif %}
+</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>

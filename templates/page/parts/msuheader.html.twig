@@ -1,0 +1,21 @@
+<div class="msu-header-container">
+<section id="msu-header-container" class="msu-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 msu-logo">
+                    <div class="msu-logo-column" id="msu-masthead" role="banner">
+                    <a href="http://www.msu.edu">
+                      <!-- if using a light background change the img src to images/masthead-helmet-green.png-->
+                    </a>
+                  </div>
+                    </div>
+                    <div class="col-md-6 audience-menu">
+                  {# Audience Menu #}
+                  {% if page.audiencemenu %}
+                  {{ page.audiencemenu }}
+                {% endif %}
+                </div>
+                </div>
+            </div>
+</section>
+</div>

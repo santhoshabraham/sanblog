@@ -1,0 +1,16 @@
+{% if page.main_menu %}
+<section id="main-menu" class="main-menu">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 no-padding">
+
+    {% block main_menu %}
+    {{ page.main_menu }}
+    {% endblock %}
+
+    </div>
+  <div class="col-md-2 no-padding egr-home-btn"><a href="https://www.egr.msu.edu"><i class="fas fa-external-link-alt"></i>  EGR Website</a></div>
+  </div>
+</div>
+</section>
+{% endif %}

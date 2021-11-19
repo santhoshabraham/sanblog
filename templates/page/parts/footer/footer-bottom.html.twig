@@ -1,0 +1,94 @@
+<div class="footer-bottom">
+{% if page.footer_bottom %}
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+{{ page.footer_bottom }}
+</div>
+</div>
+</div>
+{% endif %}
+<div class="container">
+<div class="row">
+<div class="col-md-12 align-middle">
+<section class="social-media">
+	<div class="wrapper">
+  {% if instagram %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-instagram"></i>
+			</div>
+			<span><a href="{{ instagram }}">Instagram</a></span>
+		</div>
+  {% endif %}
+  {% if facebook %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-facebook-f"></i>
+			</div>
+			<span><a href="{{ facebook }}">Facebook</a></span>
+		</div>
+  {% endif %}
+  {% if twitter %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-twitter"></i>
+			</div>
+			<span><a href="{{ twitter }}">Twitter</a></span>
+		</div>
+  {% endif %}
+  {% if linkedin %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-linkedin"></i>
+			</div>
+			<span><a href="{{ linkedin }}">LinkedIn</a></span>
+		</div>
+  {% endif %}
+  {% if youtube %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-youtube"></i>
+			</div>
+			<span><a href="{{ youtube }}">YouTube</a></span>
+		</div>
+  {% endif %}
+  {% if pinterest %}
+    <div class="button">
+    <div class="icon">
+      <i class="fab fa-pinterest"></i>
+    </div>
+    <span><a href="{{ pinterest }}">Pinterest</a></span>
+  </div>
+{% endif %}
+{% if skype %}
+  <div class="button">
+  <div class="icon">
+    <i class="fab fa-skype"></i>
+  </div>
+  <span><a href="{{ skype }}">Skype</a></span>
+</div>
+{% endif %}
+{% if vimeo %}
+<div class="button">
+<div class="icon">
+  <i class="fab fa-vimeo-v"></i>
+</div>
+<span><a href="{{ vimeo }}">Vimeo</a></span>
+</div>
+{% endif %}
+{% if github %}
+		<div class="button">
+			<div class="icon">
+				<i class="fab fa-github"></i>
+			</div>
+			<span><a href="{{ github }}">Github</a></span>
+		</div>
+	</div>
+{% endif %}
+</section>
+
+</div>
+</div>
+<div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container" style="background-color:#ffffff;">
+<div class="row">
+{% if page.sidebar_left and page.sidebar_right and page.content %}
+<div class="sidebar-left col-md-3"> {{ page.sidebar_left }} </div>
+<div class="content col">{{ page.content }}</div>
+<div class="sidebar-right col-md-3">{{ page.sidebar_right }}</div>
+{% endif %}
+
+{% if page.sidebar_left and page.sidebar_right is empty %}
+<div class="sidebar-left col-md-3">{{ page.sidebar_left }}</div>
+<div class="content col">{{ page.content }}</div>
+{% endif %}
+ {% if page.sidebar_right and page.sidebar_left is empty %}
+
+<div class="content col">{{ page.content }}</div>
+<div class="sidebar-right col-md-3">{{ page.sidebar_right }}</div>
+
+{% endif %}
+
+ {% if page.sidebar_left is empty and page.sidebar_right is empty %}
+
+<div class="content col">{{ page.content }}</div>
+
+{% endif %}
+</div>
+</div>
